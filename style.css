@@ -1,0 +1,119 @@
+body{
+    background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: white;
+    font-family: Georgia, serif;
+    margin: 0;
+}
+
+#cover{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#cover h1{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+#cover p{
+    font-size: 20px;
+    width: 500px;
+    margin-top: 0;
+}
+
+#cover button{
+    margin-top: 10px;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#isi{
+    display: none;
+    opacity: 0;
+    max-width: 800px;
+    margin: auto;
+    padding: 80px;
+    line-height: 2;
+    transform: translateY(40px);
+    transition: all 1.5s ease;
+}
+
+h1{
+    text-align: center;
+}
+
+.foto{
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.reveal{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1.2s ease;
+}
+
+.reveal.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.terakhir p{
+    margin: 0;
+    line-height: 1.5;
+}
+
+.penutup{
+    text-align: right;
+    margin-top: 40px;
+}
+
+.penutup p{
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width:768px){
+
+    #cover h1{
+        font-size: 42px;
+    }
+
+    #cover p{
+        width: 90%;
+        font-size: 18px;
+    }
+
+    #isi{
+        max-width: 75%;
+        padding: 25px;
+    }
+
+    p{
+        font-size: 18px;
+        line-height: 2;
+    }
+
+    .foto{
+        width: 75%;
+        max-width: 100%;
+    }
+
+}
