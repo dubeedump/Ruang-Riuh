@@ -77,7 +77,7 @@ h1{
 
 .terakhir p{
     margin: 0;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 .penutup{
@@ -102,17 +102,17 @@ h1{
     }
 
     #isi{
-        max-width: 75%;
+        max-width: 100%;
         padding: 25px;
     }
 
     p{
-        font-size: 18px;
+        font-size: 16px;
         line-height: 2;
     }
 
     .foto{
-        width: 75%;
+        width: 90%;
         max-width: 100%;
     }
 
